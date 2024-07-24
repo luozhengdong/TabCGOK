@@ -7,3 +7,5 @@ Ordinal tabular data, with advantages of structured knowledge representation in 
 ![motivation](./paper_image/motivation.png)
 
 <!--<img src="./paper_image/ordinal_attribution.png" width="200" height="150"> <img src="./paper_image/class_group.png" width="200" height="150">-->
+<!-- Framework -->
+![framework](./paper_image/framework.png)
