@@ -62,3 +62,22 @@ distances_classGroup, context_idx_classGroup = self.search_index.search(k, 10)
 ```
 os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 ```
+Note that 0 can be set depending on the server.
+
+(4)Fine-tuning or direct training validation
+(4.1)If you want to fine-tune, run the following:
+```
+python bin/tune.py exp/TabCGOK/acc/abalone/abalone-tuning.toml
+```
+Once the run is finished, the file ```exp/TabCGOK/acc/abalone/abalone-tuning``` should appear.
+
+(4.2)If you want to direct training validation, run the following:
+```
+python bin/go.py exp/TabCGOK/acc/abalone/abalone-tuning.toml
+```
+Once the run is finished, the following directories should appear:
+- `exp/TabCGOK/acc/abalone/abalone-tuning`
+- `exp/TabCGOK/acc/abalone/abalone-evaluation`
+- `exp/TabCGOK/acc/abalone/abalone-ensemble-5`
+Note: If you need to re-run, you will need to delete the existing folder, e.g., if you have run (4.1) and then want to run (4.2), you will need to delete ```exp/TabCGOK/acc/abalone/abalone-tuning```, because the process of running (4.2) includes (4.1).
+(5)
