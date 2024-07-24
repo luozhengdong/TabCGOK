@@ -12,9 +12,9 @@ Ordinal tabular data, with advantages of structured knowledge representation in 
 Framework of our approach. TabCGOK retrieves group-level similar features (CG) and fuses them with inter-class ordinal knowledge augmentation weights (OK) to obtain similar group-level contextual features, which are then fused with sample-level similar features and sample features to obtain the final feature representation. $GA$ denotes group algorithm, $MP$ denotes mean-pooling, $W_x$ and $W_k$ denote the encoder, $R$ denotes the retriever, $Dis$ denotes the distance algorithm, Cum denotes the cumulative algorithm, $Va$ denotes the value algorithm, $Sim$ denotes the similarity algorithm, $P$ denotes the predictor, and $x_i$ denotes query sample which is a validation or test sample instance.
 
 ## Datasets 
-The original datasets urls are in our paper. We download them, then updown them at https://drive.google.com/file/d/1N3uxh5iL8VA60zgzaFAUT6zsZ6Pkk6xh/view?usp=drive_link.
+The original datasets urls are in our paper. We download them, then updown them at [original datasets](https://drive.google.com/file/d/1N3uxh5iL8VA60zgzaFAUT6zsZ6Pkk6xh/view?usp=drive_link).
 
-The pre-processed datasets are in https://drive.google.com/drive/folders/1dB4SWJEAfmcQjzEU4Cit5eXNGpz9ZsUg?usp=drive_link. There are instructions for preprocessing the two datasets in ```data_processing.docx```. The data preprocessing code is primarily in ```lib/data_preprocess.py```.
+The pre-processed datasets are in [pre-processed dataset](https://drive.google.com/drive/folders/1dB4SWJEAfmcQjzEU4Cit5eXNGpz9ZsUg?usp=drive_link). There are instructions for preprocessing the two datasets in ```data_processing.docx```. The data preprocessing code is primarily in ```lib/data_preprocess.py```.
 
 ## Experimental Setup
 python=3.9, pytorch=1.12, 32G NVIDIA V100 GPU, 12G Tesla K80 GPUs, CPU. The version of each function package is shown in ``` environment.yaml```.
