@@ -19,7 +19,7 @@ The pre-processed datasets are in [pre-processed url](https://drive.google.com/d
 ## Experimental Setup
 python=3.9, pytorch=1.12, 32G NVIDIA V100 GPU, 12G Tesla K80 GPUs, CPU. The version of each function package is shown in ``` environment.yaml```.
 
-## Files illusitration
+## Files illustration
 'bin': contains baselines models and our model TabCGOK, as well as entry code for training, testing.
 
 'data': contains pre-processed datasets. Since 7 datasets are too big, so here we only put one example dataset, the others can be downloaded from 'Dataset'.
