@@ -36,7 +36,7 @@ conda activate TabCGOK
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 pip install -r environment.yaml
 ```
-Download the pre-processed datasets from [Googledrive](https://drive.google.com/drive/folders/1dB4SWJEAfmcQjzEU4Cit5eXNGpz9ZsUg?usp=drive_link), unzip it and put it in the ```data``` file. 
+Download the pre-processed datasets from [GoogleDrive](https://drive.google.com/drive/folders/1dB4SWJEAfmcQjzEU4Cit5eXNGpz9ZsUg?usp=drive_link), unzip it and put it in the ```data``` file. 
 
 Let's take the abalone dataset as an example, and do the same with the other datasets.
 Creating hyperparameter files
