@@ -100,6 +100,7 @@ Run this to get results:
 python lib/compute_scoreMeanStd.py
 ```
 (6) The checkpiont and results of our TabCGOK model are available in [GoogleDrive](https://drive.google.com/file/d/1WrJ9a01waFQrag97l6tBLns-t_hT15lo/view?usp=drive_link).
+(7) The ablation study code is in ```bin/tabCGOK_ICGR.py``` and ```bin/tabCGOK_OKA.py```. The confusion matrix code is in ```lib/confusion_matrix.py```.
 ## Citation(Accepted)
 <!--
 ```bibtex
