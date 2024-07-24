@@ -6,10 +6,24 @@ Ordinal tabular data, with advantages of structured knowledge representation in 
 ## TabCGOK motivation
 ![motivation](./paper_image/motivation.png)
 <!--<img src="./paper_image/ordinal_attribution.png" width="200" height="150"> <img src="./paper_image/class_group.png" width="200" height="150">-->
+
 ## TabCGOK Framework
 ![framework](./paper_image/framework.png)
 Framework of our approach. TabCGOK retrieves group-level similar features (CG) and fuses them with inter-class ordinal knowledge augmentation weights (OK) to obtain similar group-level contextual features, which are then fused with sample-level similar features and sample features to obtain the final feature representation. $GA$ denotes group algorithm, $MP$ denotes mean-pooling, $W_x$ and $W_k$ denote the encoder, $R$ denotes the retriever, $Dis$ denotes the distance algorithm, Cum denotes the cumulative algorithm, $Va$ denotes the value algorithm, $Sim$ denotes the similarity algorithm, $P$ denotes the predictor, and $x_i$ denotes query sample which is a validation or test sample instance.
-### Dataset 
-The original datasets urls are in paper. We download them, then updown them at https://drive.google.com/file/d/1N3uxh5iL8VA60zgzaFAUT6zsZ6Pkk6xh/view?usp=drive_link .
 
-The pre-processed datasets are in https://drive.google.com/drive/folders/1dB4SWJEAfmcQjzEU4Cit5eXNGpz9ZsUg?usp=drive_link .
+## Dataset 
+The original datasets urls are in our paper. We download them, then updown them at https://drive.google.com/file/d/1N3uxh5iL8VA60zgzaFAUT6zsZ6Pkk6xh/view?usp=drive_link.
+
+The pre-processed datasets are in https://drive.google.com/drive/folders/1dB4SWJEAfmcQjzEU4Cit5eXNGpz9ZsUg?usp=drive_link.
+
+## Experiment Setup
+python=3.9, pytorch=1.12, 32G NVIDIA V100 GPU, 12G Tesla K80 GPUs, CPU.
+
+## File illusitration
+'bin': contains baselines models and our model TabCGOK, as well as entry code for training, testing.
+
+'data': contains pre-processed datasets. Since 7 datasets are too big, so here we only put one example dataset, the others can be downloaded from 'Dataset'.
+
+'lib': contains some important functions of the models, especially our proposed CG module code splitClassGroup.py and OK module code ordinal_compute.py. It also contains the result calculation code compute_scoreMeanStd.py.
+
+'exp': contains the experimental configuration of each model for each dataset, which contains the evaluation of ACC and RMSE, and the corresponding '''checkpiont'''.pt and results are saved in this folder after the model training and testing are completed.
