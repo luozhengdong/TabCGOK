@@ -100,7 +100,7 @@ Run this to get results:
 python lib/compute_scoreMeanStd.py
 ```
 
-## Citation
+## Citation(Accepted)
 <!--
 ```bibtex
 @InProceedings{Luo2024TabCGOK,
