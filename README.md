@@ -26,4 +26,4 @@ python=3.9, pytorch=1.12, 32G NVIDIA V100 GPU, 12G Tesla K80 GPUs, CPU.
 
 'lib': contains some important functions of the models, especially our proposed CG module code splitClassGroup.py and OK module code ordinal_compute.py. It also contains the result calculation code compute_scoreMeanStd.py.
 
-'exp': contains the experimental configuration of each model for each dataset, which contains the evaluation of ACC and RMSE, and the corresponding '''checkpiont'''.pt and results are saved in this folder after the model training and testing are completed.
+'exp': contains the experimental configuration of each model for each dataset, which contains the evaluation of ACC and RMSE, and the corresponding ```checkpiont.pt``` and results are saved in this folder after the model training and testing are completed.
