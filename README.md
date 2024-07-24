@@ -96,7 +96,7 @@ for x in Path('../exp/TabCGOK/acc/abalone/abalone-ensemble-5').iterdir()
 ```
 Getting training validation evaluations.
 
-run this to get results:
+-Run this to get results:
 ```
 python lib/compute_scoreMeanStd.py
 ```
