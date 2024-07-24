@@ -47,5 +47,10 @@ cp 310abalone-tuning.toml abalone-tuning.toml
 In fact, abalone-tuning.toml is an arbitrary name and you can choose a different one, but it must end with -tuning.toml.
 
 Our code is written roughly, so there are two key hyperparameters that need to be set manually by going into the model code:
-(1) Number of groups within the class
+
+(1) Number of groups within the class, in code ```bin/TabCGOK```, Change the ```10``` in this line of code```distances_classGroup, context_idx_classGroup = self.search_index.search(k, 10)``` to the number of groups we want to have e.g. 3,
+
+```
+distances_classGroup, context_idx_classGroup = self.search_index.search(k, 3)
+```
 (2) Number of group feature retrievals
