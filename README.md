@@ -81,4 +81,20 @@ Once the run is finished, the following directories should appear:
 - `exp/TabCGOK/acc/abalone/abalone-ensemble-5`
 
 Note: If you need to re-run, you will need to delete the existing folder, e.g., if you have run (4.1) and then want to run (4.2), you will need to delete ```exp/TabCGOK/acc/abalone/abalone-tuning```, because the process of running (4.2) includes (4.1).
-(5)
+
+(5) Calculate the experimental results: in code ```lib/compute_scoreMeanStd.py```, Set the path in the ```Path(xxx)```. For example:
+line 7:
+```
+    for x in Path('../exp/TabCGOK/acc/abalone/abalone-evaluation').iterdir()
+```
+Getting fine-tuned evaluations.
+
+line 15:
+````
+exp/TabCGOK/acc/abalone/abalone-ensemble-5
+```
+Getting training validation evaluations.
+
+```
+python lib/compute_scoreMeanStd.py
+```
