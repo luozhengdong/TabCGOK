@@ -53,8 +53,8 @@ Our code is written roughly, so there are two key hyperparameters that need to b
 ```
 data_classGroup = (split_class_group(dataset, 3, device=device))
 ```
-(2) Number of group feature retrievals: in code ```bin/TabCGOK.py```, change the ```10``` in this line of code```distances_classGroup, context_idx_classGroup = self.search_index.search(k, 10)``` to the number of groups we want to have (e.g. 12),
+(2) Number of group feature retrievals: in code ```bin/TabCGOK.py```, change the ```10``` in this line of code```distances_classGroup, context_idx_classGroup = self.search_index.search(k, 12)``` to the number of groups we want to have (e.g. 10),
 
 ```
-distances_classGroup, context_idx_classGroup = self.search_index.search(k, 12)
+distances_classGroup, context_idx_classGroup = self.search_index.search(k, 10)
 ```
