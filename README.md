@@ -58,3 +58,7 @@ data_classGroup = (split_class_group(dataset, 3, device=device))
 ```
 distances_classGroup, context_idx_classGroup = self.search_index.search(k, 10)
 ```
+(3)Setting the GPU number, in ```bin/go.py```, ```evaluate.py```, and ```tune.py```. It's best to use the same GPU number.
+```
+os.environ["CUDA_VISIBLE_DEVICES"] = '0'
+```
