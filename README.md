@@ -39,3 +39,13 @@ pip install -r environment.yaml
 Download the pre-processed datasets from [Googledrive](https://drive.google.com/drive/folders/1dB4SWJEAfmcQjzEU4Cit5eXNGpz9ZsUg?usp=drive_link), unzip it and put it in the ```data``` file. 
 
 Let's take the abalone dataset as an example, and do the same with the other datasets.
+Creating hyperparameter files
+```
+cd exp/TabCGOK/acc/abalone
+cp 310abalone-tuning.toml abalone-tuning.toml
+```
+In fact, abalone-tuning.toml is an arbitrary name and you can choose a different one, but it must end with -tuning.toml.
+
+Our code is written roughly, so there are two key hyperparameters that need to be set manually by going into the model code:
+(1) Number of groups within the class
+(2) Number of group feature retrievals
