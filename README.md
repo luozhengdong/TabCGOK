@@ -101,11 +101,13 @@ python lib/compute_scoreMeanStd.py
 ```
 
 ## Citation
-
+<!--
 ```bibtex
 @InProceedings{Luo2024TabCGOK,
   author  = {Zhengdong Luo, Abibulla Atawulla, Fengyi Yang, Yongqing Zhu, Yixiao Ren, Yunfei Han and Xi Zhou},
   title   = {TabCGOK: Intra-Class Groups Retrieval and Inter-Class Ordinal Knowledge Augmented Network for Ordinal Tabular Data Prediction},
   booktitle = {ECAI},
   year    = {2024}
-  ```
+```
+-->
+```TabCGOK: Intra-Class Groups Retrieval and Inter-Class Ordinal Knowledge Augmented Network for Ordinal Tabular Data Prediction```
