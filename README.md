@@ -14,10 +14,10 @@ Framework of our approach. TabCGOK retrieves group-level similar features (CG) a
 ## Dataset 
 The original datasets urls are in our paper. We download them, then updown them at https://drive.google.com/file/d/1N3uxh5iL8VA60zgzaFAUT6zsZ6Pkk6xh/view?usp=drive_link.
 
-The pre-processed datasets are in https://drive.google.com/drive/folders/1dB4SWJEAfmcQjzEU4Cit5eXNGpz9ZsUg?usp=drive_link.
+The pre-processed datasets are in https://drive.google.com/drive/folders/1dB4SWJEAfmcQjzEU4Cit5eXNGpz9ZsUg?usp=drive_link. There are instructions for preprocessing the two datasets in ```data_processing.docx```. The data preprocessing code is primarily in ```lib/data_preprocess.py```
 
 ## Experiment Setup
-python=3.9, pytorch=1.12, 32G NVIDIA V100 GPU, 12G Tesla K80 GPUs, CPU.
+python=3.9, pytorch=1.12, 32G NVIDIA V100 GPU, 12G Tesla K80 GPUs, CPU. The version of each function package is shown in ``` environment.yaml```.
 
 ## File illusitration
 'bin': contains baselines models and our model TabCGOK, as well as entry code for training, testing.
