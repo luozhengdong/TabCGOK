@@ -111,3 +111,5 @@ python lib/compute_scoreMeanStd.py
 ```
 -->
 ```TabCGOK: Intra-Class Groups Retrieval and Inter-Class Ordinal Knowledge Augmented Network for Ordinal Tabular Data Prediction```
+## Acknowledgments
+Our code is based on [TabR](https://github.com/yandex-research/tabular-dl-tabr) and [OrdinalEntropy](https://github.com/needylove/OrdinalEntropy). Thanks for their great works!
