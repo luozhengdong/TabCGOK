@@ -48,9 +48,13 @@ In fact, abalone-tuning.toml is an arbitrary name and you can choose a different
 
 Our code is written roughly, so there are two key hyperparameters that need to be set manually by going into the model code:
 
-(1) Number of groups within the class, in code ```bin/TabCGOK```, Change the ```10``` in this line of code```distances_classGroup, context_idx_classGroup = self.search_index.search(k, 10)``` to the number of groups we want to have e.g. 3,
+(1) Number of groups within the class: in code ```bin/TabCGOK.py```, change the ```5``` in this line of code```data_classGroup = (split_class_group(dataset,6, device=device))``` to the number of groups we want to have (e.g. 3),
 
 ```
-distances_classGroup, context_idx_classGroup = self.search_index.search(k, 3)
+data_classGroup = (split_class_group(dataset, 3, device=device))
 ```
-(2) Number of group feature retrievals
+(2) Number of group feature retrievals: in code ```bin/TabCGOK.py```, change the ```10``` in this line of code```distances_classGroup, context_idx_classGroup = self.search_index.search(k, 10)``` to the number of groups we want to have (e.g. 12),
+
+```
+distances_classGroup, context_idx_classGroup = self.search_index.search(k, 12)
+```
