@@ -84,17 +84,16 @@ Note: If you need to re-run, you will need to delete the existing folder, e.g., 
 
 (5) Calculate the experimental results: in code ```lib/compute_scoreMeanStd.py```, Set the path in the ```Path(xxx)```. For example:
 
-line 7:
+line 7: Getting fine-tuned evaluations.
+
 ```
     for x in Path('../exp/TabCGOK/acc/abalone/abalone-evaluation').iterdir()
 ```
-        Getting fine-tuned evaluations.
-
-line 15:
+        
+line 15: Getting training validation evaluations.
 ```
 for x in Path('../exp/TabCGOK/acc/abalone/abalone-ensemble-5').iterdir()
 ```
-        Getting training validation evaluations.
 
 Run this to get results:
 ```
