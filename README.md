@@ -27,3 +27,12 @@ python=3.9, pytorch=1.12, 32G NVIDIA V100 GPU, 12G Tesla K80 GPUs, CPU. The vers
 'lib': contains some important functions of the models, especially our proposed CG module code splitClassGroup.py and OK module code ordinal_compute.py. It also contains the result calculation code compute_scoreMeanStd.py.
 
 'exp': contains the experimental configuration of each model for each dataset, which contains the evaluation of ACC and RMSE, and the corresponding ```checkpiont.pt``` and results are saved in this folder after the model training and testing are completed.
+## Training and testing
+Building a conda environment, sometimes packages in ```environment.yaml``` need to be manually installed separately.
+
+```
+conda create -n TabCGOK python=3.9
+conda activate TabCGOK
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
+pip install -r environment.yaml
+```
