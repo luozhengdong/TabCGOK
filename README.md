@@ -88,15 +88,15 @@ line 7:
 ```
     for x in Path('../exp/TabCGOK/acc/abalone/abalone-evaluation').iterdir()
 ```
-Getting fine-tuned evaluations.
+        Getting fine-tuned evaluations.
 
 line 15:
 ```
 for x in Path('../exp/TabCGOK/acc/abalone/abalone-ensemble-5').iterdir()
 ```
-Getting training validation evaluations.
+        Getting training validation evaluations.
 
--Run this to get results:
+Run this to get results:
 ```
 python lib/compute_scoreMeanStd.py
 ```
